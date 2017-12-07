@@ -1,0 +1,109 @@
+html, body, section, p, header, footer, div, ul, li{
+	margin: 0px;
+	box-sizing: border-box;
+	align-items: center;
+}
+
+body{
+	background-color: grey;
+}
+
+#container{
+	margin:auto;
+	width:70%;
+	min-height: 100%;
+	padding-left: 25px;
+	padding-right: 25px;
+	position: relative;	
+	background-color: white;
+ }
+
+#logo{
+	width:auto;
+	height:auto;
+	max-height: 299px;
+	max-width: 300px;
+	clear:both;
+	position: absolute;
+}
+
+header{
+	width:100%;
+	background-color: #063273;
+	height:209px;
+}
+
+#mainNav{
+	text-align: right;
+}
+
+nav ul, nav ul li{
+	display: inline;
+	margin:0px auto;
+	padding:5px;
+}
+
+#mainNav ul a{
+	font-family: 'Rubik', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 170px;
+	display: inline-block;
+	text-decoration: none;
+	padding:5px 10px;
+	color: white;
+	transition: 1s;
+}
+
+#mainNav ul a:hover{
+	color: #8EC0C9;
+}
+
+#space{
+	background-color: #8EC0C9;
+	height:15px;
+	margin-top: 1px;
+
+}
+
+footer{
+	width:100%;
+	clear:both;
+	bottom:0px;
+	margin-top: 200px;
+	background-color: #8EC0C9;
+}
+
+#footerNav{
+	margin:0px auto;
+	padding:0px;
+	text-align: center;
+	width:80%;
+}
+
+#footerNav ul, #footerNav ul li{
+	display: inline;
+	margin: 0px auto;
+	padding:0px;
+}
+
+#footerNav ul li:after{
+	color:black;
+	content: "|";
+	padding:5px;
+}
+
+#footerNav ul a{
+	font-size: 15px;
+	transition: 1s;
+	text-decoration: none;
+}
+
+#footerNav ul a:hover{
+	color:white;
+}
+
+#footerNav p{
+	font-size: 15px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ledboine Wealth Management</title>
+	<!--In the HTML validator, the code below  is throwing an error, but I got this code straight from
+	google to use for my font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik:400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="contact.css" />
+	<link rel="stylesheet" type="text/css" href="HeaderFooter.css" />
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="validateContact.js"></script>
+</head>
+<body>
+<div id = "container">
+	<header>
+		<img id="logo" src="LedboineLogo.jpg" alt ="" />
+		<div id="mainNav">
+		<nav>
+			<ul>
+				<li><a href="#" id="home">Home</a></li>
+				<li><a href="#" id="services">Services</a></li>
+				<li><a href="#" id="contact">Contact</a></li>
+			</ul>
+		</nav>
+		</div>
+		<div id="space">
+			<br/>
+		</div>
+	</header>
+	<br/><h1>Contact Us!</h1>
+	<h2>Fill out the information below so we can get in contact with you</h2>
+	<form id="contactForm">
+	<br/>
+		<label for="fullName">Full Name:</label>
+		<input type="text" autofocus id="fullName" placeholder="First and Last Name" />
+		<div class = "contact_error error" id="fullName_error">*Please enter your full name.</div>
+	<br/>
+		<label for="phoneNumber">Phone Number:</label>
+		<input type="tel" id="phoneNumber" placeholder="ex.204-555-5432" />
+		<div class = "contact_error error" id="phoneNumber_error">*Please enter a valid phone number.</div>
+	<br/>
+		<label for="email">Email:</label>
+		<input type="email" id="email" placeholder="example@ledboine.ca" />
+		<div class="contact_error error" id="email_error">*Please enter a valid email address.</div>
+	<br/>
+		<label for="comments">Comments:</label>
+		<textarea id="comments" name="comments" rows="10" cols="20" placeholder="ex: I would like help starting an RRSP!"></textarea>
+		<div class="contact_error error" id="comments_error">*Please tell us your reason for needing Ledboine services.</div>
+	<br/><br/>
+		<button type="submit" id="submit">Submit</button>
+		<button type="reset" id="reset">Reset</button>
+	</form>
+	<div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 41.8275379, lng: -71.4165036};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyz6bMw4n67Nt-KWpvx858T55ODTgQJ_w&callback=initMap">
+    </script>
+	<footer>
+	<div id="footerNav">
+	<nav>
+		<ul>
+			<li><a href="#" id="home2">Home</a></li>
+			<li><a href="#" id="services2">Services</a></li>
+			<li><a href="#" id="contact2">Contact</a></li>
+		</ul>
+	</nav>
+	<p>Ledboine Wealth Management<br/>
+	123 Financial Way Unit 45-67<br/>
+	Providence, RI A1B2C</p>
+	</div>
+	</footer>
+</div>
+</body>
+</html>

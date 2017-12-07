@@ -1,0 +1,46 @@
+p{
+	font-size: 18px;
+}
+
+h1{
+	font-style:italic;
+}
+
+#insurance{
+	width: 50%;
+}
+
+#retirement{
+	width:50%;
+	float:right;
+}
+
+#retirementPic{
+	width:auto;
+	height: auto;
+	max-height: 300px;
+	max-width: 300px;
+	margin-left: 100px;
+}
+
+#education{
+	width:50%;
+}
+
+#educationPic{
+	width:auto;
+	height:auto;
+	max-width: 300px;
+	max-height: 300px;
+	margin-top: -150px;
+	margin-left: 600px;
+}
+
+#invest{
+	width:50%;
+	float:right;
+}
+
+footer{
+	margin-top: 300px;
+}

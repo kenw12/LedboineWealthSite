@@ -1,0 +1,29 @@
+h1{
+	width:70%;
+}
+
+#whyChoose{
+	width:70%;
+	font-size: 18px;
+}
+
+#homepageImage{
+	float:right;
+	width:auto;
+	height:auto;
+	max-width: 40%;
+	max-height: 500px;
+	margin-top: -180px;
+	clear: both;
+	position:relative;
+}
+
+h2{
+	width:70%;
+	font-size: 32px;
+}
+
+#currentEvents{
+	width:70%;
+	font-size: 18px;
+}
